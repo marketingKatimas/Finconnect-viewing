@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Gunakan kalkulator pinjaman Loanbuddy untuk mengira semakan kewangan anda dengan cepat, mudah, dan tepat. Dapatkan anggaran bayaran bulanan dan kadar faedah dalam beberapa saat.">
+    <meta name="description" content="Gunakan kalkulator pinjaman Finconnect untuk mengira semakan kewangan anda dengan cepat, mudah, dan tepat. Dapatkan anggaran bayaran bulanan dan kadar faedah dalam beberapa saat.">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title>Kalkulator Pinjaman: Kira Kelayakan & Bayaran Pinjaman Anda</title>
@@ -126,14 +126,14 @@
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="service_submenu">
                         <li class="dropdown">
-                          <a class="nav-link" href="loanfit">
-                            loanfit
+                          <a class="nav-link" href="finfit">
+                            FinFit
                           </a>
                           
                         </li>
                         <li class="dropdown">
-                          <a class="nav-link" href="loancompare" >
-                            loancompare
+                          <a class="nav-link" href="fincompare" >
+                            FinCompare
                           </a>
                           
                         </li>
@@ -304,10 +304,10 @@
                             <div class="calc_output">
                               <span>RM </span><input type="number" value="10000" class="loan-amount" id="mLoanShow2" readonly>
                             </div>
-                            <input type="range" class="calc__input-range1" name="mLoan" id="mLoan" value="20000" min="1000"
-                              max="100000" step="1000" oninput="updateLoanAmount(this.value)"
+                            <input type="range" class="calc__input-range1" name="mLoan" id="mLoan" value="10000" min="1000"
+                              max="50000" step="1000" oninput="updateLoanAmount(this.value)"
                               style="background: linear-gradient(to right, #044BD9 0%, #044BD9 20%, #d3d3d3 20%, #d3d3d3 100%)">
-                            <div class="calc__placeholders"> <span>RM1,000</span> <span>RM100,000</span></div>
+                            <div class="calc__placeholders"> <span>RM1,000</span> <span>RM50,000</span></div>
                           </div>
             
                           <div class="group">
@@ -315,15 +315,15 @@
                             <div class="calc_output">
                               <input type="number" value="18" class="loan-tenure" id="mLoanShow3" readonly>
                             </div>
-                            <input type="range" class="calc__input-range2" name="mLoan" id="mLoan3" value="18" min="6" max="84"
+                            <input type="range" class="calc__input-range2" name="mLoan" id="mLoan3" value="18" min="12" max="60"
                               step="6" oninput="updateLoanTenure(this.value)"
                               style="background: linear-gradient(to right, #044BD9 0%, #044BD9 15.4%, #d3d3d3 15.4%, #d3d3d3 100%)">
-                            <div class="calc__placeholders"> <span>6 bulan</span> <span>84 bulan</span></div>
+                            <div class="calc__placeholders"> <span>12 bulan</span> <span>60 bulan</span></div>
                           </div>
-
+                          <br>
                           <div class="group">
-                            <label class="title" id="textInterest">Kadar Faedah (%):</label>
-                            <div class="calc_output">
+                            <label class="title" id="textInterest">Kadar Faedah (%):  18% per annum</label>
+                            <!-- <div class="calc_output">
                               <input type="number" value="1.5" class="interest-rate" id="mInterestShow" readonly>
                             </div>
                             <input type="range" class="calc__input-range1" name="mInterest" id="mInterest" value="2.0" min="0.1" max="10" step="0.1"
@@ -331,7 +331,7 @@
                                    style="background: linear-gradient(to right, #044BD9 0%, #044BD9 20%, #d3d3d3 20%, #d3d3d3 100%);">
                             <div class="calc__placeholders">
                               <span>0.1%</span> <span>10%</span>
-                            </div>
+                            </div> -->
                           </div>
 
                           
@@ -359,7 +359,7 @@
                         <div class="col-12">
                           <div class="total-amount text-center">
                             <h3 class="title">
-                              <span id="textTotalAmountYouPay">Jumlah &nbsp;
+                              <span id="textTotalAmountYouPay">Jumlah: &nbsp;
                               </span>
                               <!-- <span
                                 class="loan-tenure-value" id="loanTenureInputDefault">18
@@ -375,7 +375,7 @@
                           </div>
                         </div>
                       
-                            <!-- <a href="loanfit">
+                            <!-- <a href="finfit">
                               <button class="btn btn_green w-100 mt-20">
                                 <span>
                                   <small>Dapatkan Konsultasi</small>
@@ -422,7 +422,7 @@
                     </div>
                   </div>
                   <p class="heading_description mb-0  text-grey justify-content-center font-decrease">
-                    <em>Maklumat yang dipaparkan adalah sebagai petunjuk dan untuk kegunaan peribadi sahaja. loanbuddy tidak menjamin ketepatan pengiraan dan tidak bertanggungjawab bagi apa-apa ketidaktepatan atau ketinggalan. Maklumat di atas tidak bermaksud sebagai satu tawaran kredit dan tidak menjamin bahawa kemudahan kredit yang dipohon akan diluluskan. Semua permohonan untuk pembiayaan adalah tertakluk kepada penilaian dan kelulusan dari rakan kongsi dan pembiaya di platform loanbuddy.</em>
+                    <em>Maklumat yang dipaparkan adalah sebagai petunjuk dan untuk kegunaan peribadi sahaja. Finconnect tidak menjamin ketepatan pengiraan dan tidak bertanggungjawab bagi apa-apa ketidaktepatan atau ketinggalan. Maklumat di atas tidak bermaksud sebagai satu tawaran kredit dan tidak menjamin bahawa kemudahan kredit yang dipohon akan diluluskan. Semua permohonan untuk pembiayaan adalah tertakluk kepada penilaian dan kelulusan dari rakan kongsi dan pembiaya di platform Finconnect.</em>
                   </p>
                   <!-- <form action="#">
                     <h3 class="form_title">Kalkulator Pinjaman</h3>
@@ -478,7 +478,7 @@
               <div class="col-md-8 text-cta-mobile font-increase">
                 <h2 class="text-white ">
                   Perlukan Pinjaman Peribadi Atau Pinjaman Koperasi? <br>
-                  Loanbuddy Sedia Berkhidmat!
+                  Finconnect Sedia Berkhidmat!
                 </h2>
               </div>
               <div class="col-md-4 z-index-3" id="movingBtnDiv">
@@ -562,7 +562,7 @@
               <div class="col-lg-11 text-center">
                 <p class="mb-0">
                   Tiada lagi pengisian borang yang tidak berkesudahan atau kebimbangan sama ada sesebuah pemberi pinjaman itu sahih atau tidak. 
-                  Satu permintaan kepada loanbuddy, selamat datang ke dunia penuh pilihan!
+                  Satu permintaan kepada Finconnect, selamat datang ke dunia penuh pilihan!
                 </p>
               </div>
             </div>
@@ -878,7 +878,7 @@
                             <p class="mb-0">
                               Ini bergantung dengan status pekerjaan, pendapatan dan skor kredit anda. Jumlah pinjaman maksimum yang boleh anda pinjam melalui pinjaman peribadi di Malaysia ialah RM350,000, bergantung kepada institusi kewangan. Walau bagaimanapun, gaji anda juga memainkan peranan dalam menentukan jumlah pinjaman yang anda layak. Peminjam biasanya boleh meminjam sehingga empat kali ganda daripada gaji bulanannya. <br><br>
     
-                              Gunakan kalkulator pinjaman peribadi loanbuddy untuk menganggarkan ansuran bulanan sebelum memohon pinjaman peribadi yang bersesuaian dengan keperluan dan kelayakan anda.
+                              Gunakan kalkulator pinjaman peribadi Finconnect untuk menganggarkan ansuran bulanan sebelum memohon pinjaman peribadi yang bersesuaian dengan keperluan dan kelayakan anda.
                             </p>
                           </div>
                         </div>
@@ -982,7 +982,7 @@
                               <br><br>
                               Anda juga boleh menggunakan beberapa alat untuk mengetahui skor kredit anda, mengira kemampuan pinjaman, memuat turun penyata dan banyak lagi – semuanya di hujung jari anda.
                               <br><br>
-                              Di loanbuddy, kami mempunyai pelbagai jenis pinjaman peribadi yang boleh memenuhi segala keperluan anda dan permohonan pinjaman dalam talian yang cepat dan mudah. <a class="text-green" href="loanfit">KLIK SINI</a> untuk mohon. Kadar faedah ditentukan oleh pemberi pinjaman berdasarkan Kadar Asas (Base Rate) dan ditambah dengan margin yang ditentukan. Nombor ini dipanggil sebagai Kadar Pinjaman Efektif (Effective Lending Rate). Sebagai contoh, Maybank mempunyai BR sebanyak 1.75% ditambah margin 1.50%; ini bermakna kadar faedah yang dikenakan kepada anda ialah 3.25%.
+                              Di Finconnect, kami mempunyai pelbagai jenis pinjaman peribadi yang boleh memenuhi segala keperluan anda dan permohonan pinjaman dalam talian yang cepat dan mudah. <a class="text-green" href="finfit">KLIK SINI</a> untuk mohon. Kadar faedah ditentukan oleh pemberi pinjaman berdasarkan Kadar Asas (Base Rate) dan ditambah dengan margin yang ditentukan. Nombor ini dipanggil sebagai Kadar Pinjaman Efektif (Effective Lending Rate). Sebagai contoh, Maybank mempunyai BR sebanyak 1.75% ditambah margin 1.50%; ini bermakna kadar faedah yang dikenakan kepada anda ialah 3.25%.
                               
                             </p>
                           </div>
@@ -995,7 +995,7 @@
                         <div id="collapse_thirteen" class="accordion-collapse collapse" data-bs-parent="#faq_accordion_1">
                           <div class="accordion-body">
                             <p class="mb-0">
-                              Proses kelulusan boleh sepantas 2 hari bekerja, bergantung kepada pemberi pinjaman. Semak senarai pinjaman kelulusan pantas loanbuddy yang boleh memproses permohonan anda dan mengeluarkan pinjaman kepada anda dalam masa 48 jam.
+                              Proses kelulusan boleh sepantas 2 hari bekerja, bergantung kepada pemberi pinjaman. Semak senarai pinjaman kelulusan pantas Finconnect yang boleh memproses permohonan anda dan mengeluarkan pinjaman kepada anda dalam masa 48 jam.
                             </p>
                           </div>
                         </div>
@@ -1007,7 +1007,7 @@
                         <div id="collapse_fourteen" class="accordion-collapse collapse" data-bs-parent="#faq_accordion_1">
                           <div class="accordion-body">
                             <p class="mb-0">
-                              Tidak, tiada bayaran pendahuluan diperlukan untuk memohon pinjaman peribadi atau memproses permohonan anda di Malaysia. loanbuddy menyediakan perkhidmatan yang percuma kepada pengguna mereka. Jika anda dikehendaki membayar yuran tersebut, segera hubungi pihak berkuasa. Ketahui lebih lanjut tentang penipuan pinjaman di Malaysia dengan membaca artikel di blog kami.
+                              Tidak, tiada bayaran pendahuluan diperlukan untuk memohon pinjaman peribadi atau memproses permohonan anda di Malaysia. Finconnect menyediakan perkhidmatan yang percuma kepada pengguna mereka. Jika anda dikehendaki membayar yuran tersebut, segera hubungi pihak berkuasa. Ketahui lebih lanjut tentang penipuan pinjaman di Malaysia dengan membaca artikel di blog kami.
                             </p>
                           </div>
                         </div>
@@ -1075,16 +1075,16 @@
                       </div>
                       <div class="accordion-item">
                         <div class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_eighteen" aria-expanded="false">
-                          Siapa loanbuddy dan apakah jenis pinjaman yang disediakan oleh loanbuddy?
+                          Siapa Finconnect dan apakah jenis pinjaman yang disediakan oleh Finconnect?
                         </div>
                         <div id="collapse_eighteen" class="accordion-collapse collapse" data-bs-parent="#faq_accordion_1">
                           <div class="accordion-body">
                             <p class="mb-0">
                               <ul>
                                 <li>
-                                  loanbuddy adalah platform pinjaman peribadi institusi kewangan dan koperasi yang membantu peminjam cari, mohon dan banding pembiayaan yang paling sesuai untuk anda. loanbuddy juga merupakan platform untuk belajar asas kewangan dan memastikan anda sentiasa mengikuti perkembangan isu semasa.
+                                  Finconnect adalah platform pinjaman peribadi institusi kewangan dan koperasi yang membantu peminjam cari, mohon dan banding pembiayaan yang paling sesuai untuk anda. Finconnect juga merupakan platform untuk belajar asas kewangan dan memastikan anda sentiasa mengikuti perkembangan isu semasa.
                                   <br><br>
-                                  Produk pinjaman peribadi di platform loanbuddy sesuai untuk sektor swasta dan kakitangan awam di Malaysia.
+                                  Produk pinjaman peribadi di platform Finconnect sesuai untuk sektor swasta dan kakitangan awam di Malaysia.
                                   <br><br>
                                   Bagi penjawat awam, kami menawarkan pinjaman peribadi dan koperasi yang anda boleh perolehi daripada rakan kongsi pembiayaan kami yang terkenal dan berwibawa.
                                   <br><br>
@@ -1105,7 +1105,7 @@
                           <div class="accordion-body">
                             <p class="mb-0">
                               
-                              Kalkulator Pinjaman Peribadi loanbuddy direka khas untuk membantu dalam menganggarkan jumlah pembayaran balik pinjaman peribadi bulanan.
+                              Kalkulator Pinjaman Peribadi Finconnect direka khas untuk membantu dalam menganggarkan jumlah pembayaran balik pinjaman peribadi bulanan.
                               <br><br>
                               Kalkulator ini dapat memberi sedikit gambaran tentang jumlah bayaran bulanan yang anda mampu. Pertama, masukkan jumlah pinjaman, kemudian masukkan kadar faedah pinjaman dan tempoh pinjaman.
                                 
@@ -1115,7 +1115,7 @@
                       </div>
                       <div class="accordion-item">
                         <div class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_twenty" aria-expanded="false">
-                          Sebagai penjawat awam, macam mana saya memohon pinjaman peribadi melalui platform loanbuddy?
+                          Sebagai penjawat awam, macam mana saya memohon pinjaman peribadi melalui platform Finconnect?
                         </div>
                         <div id="collapse_twenty" class="accordion-collapse collapse" data-bs-parent="#faq_accordion_1">
                           <div class="accordion-body">
@@ -1132,7 +1132,7 @@
                               Langkah 2: Bandingkan dan pilih produk yang paling sesuai dengan anda <br>
                               Langkah 3: Hantarkan dokumen anda dan pegawai pinjaman kami yang mesra akan menghubungi anda untuk melengkapkan permohonan pinjaman
                               <br><br>
-                              Mohon dan semak kelayakan anda secara percuma 100%. Tiada caj tersembunyi atau yuran pemprosesan. <a class="text-green" href="loanfit">KLIK SINI</a> untuk memohon. 
+                              Mohon dan semak kelayakan anda secara percuma 100%. Tiada caj tersembunyi atau yuran pemprosesan. <a class="text-green" href="finfit">KLIK SINI</a> untuk memohon. 
                                 
                             </p>
                           </div>
@@ -1140,7 +1140,7 @@
                       </div>
                       <div class="accordion-item">
                         <div class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_twentyone" aria-expanded="false">
-                          Sebagai pekerja swasta, macam mana cara memohon pinjaman peribadi melalui platform loanbuddy?
+                          Sebagai pekerja swasta, macam mana cara memohon pinjaman peribadi melalui platform Finconnect?
                         </div>
                         <div id="collapse_twentyone" class="accordion-collapse collapse" data-bs-parent="#faq_accordion_1">
                           <div class="accordion-body">
@@ -1153,7 +1153,7 @@
                               <br><br>
                               Langkah 3: Serahkan dokumen yang diperlukan dan tandatangani perjanjianSetelah proses pengesahan selesai, anda boleh mengemukakan dokumen yang diperlukan iaitu, Kad Pengenalan, slip gaji dan penyata bank 3 bulan terkini, borang pengisytiharan cukai, penyata KWSP atau cukai terkini dan bil utiliti (seperti bil elektrik, air & lain-lain) sebelum pergi ke pejabat pemberi pinjaman untuk menandatangani perjanjian.
                               <br><br>
-                              Mohon dan semak kelayakan anda secara 100% percuma. Tiada caj tersembunyi atau yuran pemprosesan. Kad ATM tidak diperlukan. <a class="text-green" href="loanfit">KLIK SINI</a> untuk mohon.
+                              Mohon dan semak kelayakan anda secara 100% percuma. Tiada caj tersembunyi atau yuran pemprosesan. Kad ATM tidak diperlukan. <a class="text-green" href="finfit">KLIK SINI</a> untuk mohon.
                                 
                             </p>
                           </div>
@@ -1161,7 +1161,7 @@
                       </div>
                       <div class="accordion-item">
                         <div class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_twentytwo" aria-expanded="false">
-                          Adakah saya layak memohon pinjaman peribadi di platform loanbuddy jika saya seorang ekspatriat?
+                          Adakah saya layak memohon pinjaman peribadi di platform Finconnect jika saya seorang ekspatriat?
                         </div>
                         <div id="collapse_twentytwo" class="accordion-collapse collapse" data-bs-parent="#faq_accordion_1">
                           <div class="accordion-body">
@@ -1173,7 +1173,7 @@
                       </div>
                       <div class="accordion-item">
                         <div class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_twentythree" aria-expanded="false">
-                          Jika saya menganggur, dapatkah saya memohon pinjaman peribadi melalui platform loanbuddy?
+                          Jika saya menganggur, dapatkah saya memohon pinjaman peribadi melalui platform Finconnect?
                         </div>
                         <div id="collapse_twentythree" class="accordion-collapse collapse" data-bs-parent="#faq_accordion_1">
                           <div class="accordion-body">
@@ -1185,7 +1185,7 @@
                       </div>
                       <div class="accordion-item">
                         <div class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_twentyfour" aria-expanded="false">
-                          Jika saya seorang pelajar, dapatkah saya memohon pinjaman peribadi melalui platform loanbuddy?
+                          Jika saya seorang pelajar, dapatkah saya memohon pinjaman peribadi melalui platform Finconnect?
                         </div>
                         <div id="collapse_twentyfour" class="accordion-collapse collapse" data-bs-parent="#faq_accordion_1">
                           <div class="accordion-body">
@@ -1201,7 +1201,7 @@
                       </div>
                       <div class="accordion-item">
                         <div class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_twentyfive" aria-expanded="false">
-                          Jika saya seorang pekerja kontrak, dapatkah saya memohon pinjaman peribadi melalui platform loanbuddy?
+                          Jika saya seorang pekerja kontrak, dapatkah saya memohon pinjaman peribadi melalui platform Finconnect?
                         </div>
                         <div id="collapse_twentyfive" class="accordion-collapse collapse" data-bs-parent="#faq_accordion_1">
                           <div class="accordion-body">
@@ -1213,19 +1213,19 @@
                       </div>
                       <div class="accordion-item">
                         <div class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_twentysix" aria-expanded="false">
-                          Jika saya seorang pemilik perniagaan kecil, dapatkah saya memohon pinjaman peribadi melalui platform loanbuddy?
+                          Jika saya seorang pemilik perniagaan kecil, dapatkah saya memohon pinjaman peribadi melalui platform Finconnect?
                         </div>
                         <div id="collapse_twentysix" class="accordion-collapse collapse" data-bs-parent="#faq_accordion_1">
                           <div class="accordion-body">
                             <p class="mb-0">
-                              Kami ada sediakan pinjaman peribadi untuk peniaga kecil. <a class="text-green" href="loanfit">KLIK SINI</a> untuk mohon.
+                              Kami ada sediakan pinjaman peribadi untuk peniaga kecil. <a class="text-green" href="finfit">KLIK SINI</a> untuk mohon.
                             </p>
                           </div>
                         </div>
                       </div>
                       <div class="accordion-item">
                         <div class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_twentyseven" aria-expanded="false">
-                          Apakah julat kadar faedah pinjaman peribadi yang disediakan di loanbuddy?
+                          Apakah julat kadar faedah pinjaman peribadi yang disediakan di Finconnect?
                         </div>
                         <div id="collapse_twentyseven" class="accordion-collapse collapse" data-bs-parent="#faq_accordion_1">
                           <div class="accordion-body">
@@ -1239,7 +1239,7 @@
                       </div>
                       <div class="accordion-item">
                         <div class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_twentyeight" aria-expanded="false">
-                          Adakah saya memerlukan penjamin atau sebarang cagaran untuk memohon pinjaman peribadi di loanbuddy?
+                          Adakah saya memerlukan penjamin atau sebarang cagaran untuk memohon pinjaman peribadi di Finconnect?
                         </div>
                         <div id="collapse_twentyeight" class="accordion-collapse collapse" data-bs-parent="#faq_accordion_1">
                           <div class="accordion-body">
@@ -1315,11 +1315,11 @@
                   <div class="site_logo">
                     <a class="site_link" href="/">
                       <!-- <img src="assets/images/logo/site_logo_2.svg" alt="loanbuddy l- teman kewangan anda"> -->
-                       <img src="assets/images/logo/Loanbuddy-Logo-White.png" alt="">
+                       <img src="assets/images/logo/Finconnect-Logo-White.png" alt="">
                     </a>
                   </div>
                   <p>
-                    loanbuddy merupakan platform dalam talian untuk peminjam mencari, memohon serta mendapatkan pinjaman terus ke akaun bank dalam 24 jam.
+                    Finconnect merupakan platform dalam talian untuk peminjam mencari, memohon serta mendapatkan pinjaman terus ke akaun bank dalam 24 jam.
                   </p>
                   <p>
                     <strong>Cari kami di sini:</strong><br>
@@ -1341,14 +1341,14 @@
 
                   <ul class="social_links unordered_list">
                     <li>
-                      <a href="https://www.facebook.com/loanbuddyteam/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     </li>
                     <li>
-                      <a href="https://www.instagram.com/loanbuddyteam/" target="_blank"><i class="fab fa-instagram"></i></a>
+                      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                     </li>
                     <li>
                       <!-- Embed TikTok SVG directly -->
-                      <a href="https://www.tiktok.com/@loanbuddyteam" target="_blank">
+                      <a href="https://www.tiktok.com/" target="_blank">
                         <svg fill="#1F1D0D" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                           <path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z"/>
                         </svg>
@@ -1436,15 +1436,15 @@
                           <h3 class="footer_widget_title">Perkhidmatan</h3>
                           <ul class="page_list unordered_list_block">
                             <li>
-                              <a href="loanfit">
+                              <a href="finfit">
                                 <span class="item_icon"><i class="fas fa-caret-right"></i></span>
-                                <span class="item_text">loanfit</span>
+                                <span class="item_text">FinFit</span>
                               </a>
                             </li>
                             <li>
-                              <a href="loancompare">
+                              <a href="fincompare">
                                 <span class="item_icon"><i class="fas fa-caret-right"></i></span>
-                                <span class="item_text">loancompare</span>
+                                <span class="item_text">FinCompare</span>
                               </a>
                             </li>
                             <li>
@@ -1565,7 +1565,7 @@
         <div class="copyright_widget">
           <div class="container">
             <p class="copyright_text text-center mb-0">
-              loanbuddy © All rights reserved Copyrights 2025
+              Finconnect © All rights reserved Copyrights 2025
             </p>
           </div>
         </div>

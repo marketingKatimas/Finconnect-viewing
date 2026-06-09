@@ -93,111 +93,256 @@
 //   });
 // }
 
+
+
+
+// const loanAmountInput = document.querySelector(".loan-amount");
+// const interestRateInput = document.querySelector(".interest-rate");
+// const loanTenureInput = document.querySelector(".loan-tenure");
+
+// const loanEMIValue = document.querySelector(".loan-emi .value");
+// const totalInterestValue = document.querySelector(".total-interest .value");
+// const totalAmountValue = document.querySelector(".total-amount .value");
+
+// const calculateBtn = document.querySelector(".calculate-btn");
+
+// // Function to update the loan amount
+// const updateLoanAmount = (value) => {
+//   loanAmountInput.value = value;
+//   refreshInputValues();
+//   let emi = calculateEMI();
+//   updateData(emi);
+//   updateRangeBackground(loanAmountInput, value);
+// };
+
+// // Function to update the interest rate
+// const updateInterestRate = (value) => {
+//   interestRateInput.value = value;
+//   refreshInputValues();
+//   let emi = calculateEMI();
+//   updateData(emi);
+//   updateRangeBackground(interestRateInput, value);
+// };
+
+// // Function to update the loan tenure
+// const updateLoanTenure = (value) => {
+//   loanTenureInput.value = value;
+//   refreshInputValues();
+//   let emi = calculateEMI();
+//   updateData(emi);
+//   updateRangeBackground(loanTenureInput, value);
+// };
+
+// // Function to calculate the EMI (Simple Interest)
+// const calculateEMI = () => {
+//   const totalAmount = loanAmount * interest;
+//   const emi = totalAmount / loanTenure;
+//   return emi;
+// };
+
+// // Function to update the displayed values
+// const updateData = (emi) => {
+//   loanEMIValue.innerHTML = Math.round(emi);
+//   const totalAmount = Math.round(loanAmount * interest);
+//   totalAmountValue.innerHTML = totalAmount;
+//   const totalInterest = Math.round(totalAmount - loanAmount);
+//   totalInterestValue.innerHTML = totalInterest;
+//   document.querySelector(".loan-tenure-value").innerHTML = loanTenure;
+// };
+
+// // Function to refresh input values and compute interest
+// const refreshInputValues = () => {
+//   loanAmount = parseFloat(loanAmountInput.value);
+//   loanTenure = parseFloat(loanTenureInput.value);
+
+//   // Treat the interest rate as a monthly percentage:
+//   const monthlyInterestRate = parseFloat(interestRateInput.value) / 100;
+  
+//   // const annualInterestRate = parseFloat(interestRateInput.value);
+//   // const monthlyInterestRate = annualInterestRate / 12 / 100; // Convert annual to monthly decimal
+//   interest = 1 + (monthlyInterestRate * loanTenure); // Total interest factor
+// };
+
+// // Function to initialize the calculator
+// const init = () => {
+//   refreshInputValues();
+//   let emi = calculateEMI();
+//   updateData(emi);
+// };
+
+// // Background update for sliders
+// const updateRangeBackground = (input, value) => {
+//   const percentage = ((value - input.min) / (input.max - input.min)) * 100;
+//   input.style.background = `linear-gradient(to right, #044BD9 0%, #044BD9 ${percentage}%, #d3d3d3 ${percentage}%, #d3d3d3 100%)`;
+// };
+
+// // Event listeners for sliders
+// document.querySelectorAll(".calc__input-range1").forEach(input => {
+//   input.addEventListener("input", () => updateRangeBackground(input, input.value));
+// });
+
+// document.querySelectorAll(".calc__input-range2").forEach(input => {
+//   input.addEventListener("input", () => updateRangeBackground(input, input.value));
+// });
+
+// document.querySelectorAll(".calc__input-range3").forEach(input => {
+//   input.addEventListener("input", () => updateRangeBackground(input, input.value));
+// });
+
+// // Linking sliders to update functions
+// document.getElementById("mLoan")?.addEventListener("input", function() {
+//   updateLoanAmount(this.value);
+// });
+
+// document.getElementById("mLoan2")?.addEventListener("input", function() { // Assuming ID "mLoan2" for interest rate
+//   updateInterestRate(this.value);
+// });
+
+// document.getElementById("mLoan3")?.addEventListener("input", function() {
+//   updateLoanTenure(this.value);
+// });
+
+// // Initialize the calculator
+// init();
+
+/// test
+
 const loanAmountInput = document.querySelector(".loan-amount");
-const interestRateInput = document.querySelector(".interest-rate");
 const loanTenureInput = document.querySelector(".loan-tenure");
 
 const loanEMIValue = document.querySelector(".loan-emi .value");
-const totalInterestValue = document.querySelector(".total-interest .value");
 const totalAmountValue = document.querySelector(".total-amount .value");
 
-const calculateBtn = document.querySelector(".calculate-btn");
+// FIXED INTEREST RATE
+const ANNUAL_INTEREST_RATE = 18; // 18% per annum
 
-// Function to update the loan amount
+let loanAmount = 0;
+let loanTenure = 0;
+
+// Update loan amount
 const updateLoanAmount = (value) => {
   loanAmountInput.value = value;
+
   refreshInputValues();
-  let emi = calculateEMI();
+
+  const emi = calculateEMI();
+
   updateData(emi);
-  updateRangeBackground(loanAmountInput, value);
+
+  updateRangeBackground(
+    document.getElementById("mLoan"),
+    value
+  );
 };
 
-// Function to update the interest rate
-const updateInterestRate = (value) => {
-  interestRateInput.value = value;
-  refreshInputValues();
-  let emi = calculateEMI();
-  updateData(emi);
-  updateRangeBackground(interestRateInput, value);
-};
-
-// Function to update the loan tenure
+// Update loan tenure
 const updateLoanTenure = (value) => {
   loanTenureInput.value = value;
+
   refreshInputValues();
-  let emi = calculateEMI();
+
+  const emi = calculateEMI();
+
   updateData(emi);
-  updateRangeBackground(loanTenureInput, value);
+
+  updateRangeBackground(
+    document.getElementById("mLoan3"),
+    value
+  );
 };
 
-// Function to calculate the EMI (Simple Interest)
+// Calculate EMI using SIMPLE INTEREST
 const calculateEMI = () => {
-  const totalAmount = loanAmount * interest;
-  const emi = totalAmount / loanTenure;
-  return emi;
+
+  // Convert months to years
+  const tenureInYears = loanTenure / 12;
+
+  // Simple interest formula
+  const totalInterest =
+    loanAmount *
+    (ANNUAL_INTEREST_RATE / 100) *
+    tenureInYears;
+
+  const totalAmount =
+    loanAmount + totalInterest;
+
+  const emi =
+    totalAmount / loanTenure;
+
+  return {
+    emi,
+    totalAmount
+  };
 };
 
-// Function to update the displayed values
-const updateData = (emi) => {
-  loanEMIValue.innerHTML = Math.round(emi);
-  const totalAmount = Math.round(loanAmount * interest);
-  totalAmountValue.innerHTML = totalAmount;
-  const totalInterest = Math.round(totalAmount - loanAmount);
-  totalInterestValue.innerHTML = totalInterest;
-  document.querySelector(".loan-tenure-value").innerHTML = loanTenure;
+// Update UI values
+const updateData = (data) => {
+
+  loanEMIValue.innerHTML =
+    Math.round(data.emi).toLocaleString();
+
+  totalAmountValue.innerHTML =
+    Math.round(data.totalAmount).toLocaleString();
+
+  const tenureText =
+    document.querySelector(".loan-tenure-value");
+
+  if (tenureText) {
+    tenureText.innerHTML = loanTenure;
+  }
 };
 
-// Function to refresh input values and compute interest
+// Refresh values
 const refreshInputValues = () => {
-  loanAmount = parseFloat(loanAmountInput.value);
-  loanTenure = parseFloat(loanTenureInput.value);
 
-  // Treat the interest rate as a monthly percentage:
-  const monthlyInterestRate = parseFloat(interestRateInput.value) / 100;
-  
-  // const annualInterestRate = parseFloat(interestRateInput.value);
-  // const monthlyInterestRate = annualInterestRate / 12 / 100; // Convert annual to monthly decimal
-  interest = 1 + (monthlyInterestRate * loanTenure); // Total interest factor
+  loanAmount =
+    parseFloat(loanAmountInput.value);
+
+  loanTenure =
+    parseFloat(loanTenureInput.value);
 };
 
-// Function to initialize the calculator
-const init = () => {
-  refreshInputValues();
-  let emi = calculateEMI();
-  updateData(emi);
-};
-
-// Background update for sliders
+// Slider background effect
 const updateRangeBackground = (input, value) => {
-  const percentage = ((value - input.min) / (input.max - input.min)) * 100;
-  input.style.background = `linear-gradient(to right, #044BD9 0%, #044BD9 ${percentage}%, #d3d3d3 ${percentage}%, #d3d3d3 100%)`;
+
+  const percentage =
+    ((value - input.min) /
+    (input.max - input.min)) * 100;
+
+  input.style.background =
+    `linear-gradient(
+      to right,
+      #044BD9 0%,
+      #044BD9 ${percentage}%,
+      #d3d3d3 ${percentage}%,
+      #d3d3d3 100%
+    )`;
 };
 
-// Event listeners for sliders
-document.querySelectorAll(".calc__input-range1").forEach(input => {
-  input.addEventListener("input", () => updateRangeBackground(input, input.value));
-});
+// Event listeners
+document.getElementById("mLoan")
+?.addEventListener("input", function () {
 
-document.querySelectorAll(".calc__input-range2").forEach(input => {
-  input.addEventListener("input", () => updateRangeBackground(input, input.value));
-});
-
-document.querySelectorAll(".calc__input-range3").forEach(input => {
-  input.addEventListener("input", () => updateRangeBackground(input, input.value));
-});
-
-// Linking sliders to update functions
-document.getElementById("mLoan")?.addEventListener("input", function() {
   updateLoanAmount(this.value);
+
 });
 
-document.getElementById("mLoan2")?.addEventListener("input", function() { // Assuming ID "mLoan2" for interest rate
-  updateInterestRate(this.value);
-});
+document.getElementById("mLoan3")
+?.addEventListener("input", function () {
 
-document.getElementById("mLoan3")?.addEventListener("input", function() {
   updateLoanTenure(this.value);
+
 });
 
-// Initialize the calculator
+// Initialize
+const init = () => {
+
+  refreshInputValues();
+
+  const emi = calculateEMI();
+
+  updateData(emi);
+
+};
+
 init();
