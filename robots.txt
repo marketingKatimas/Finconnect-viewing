@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://loanbuddy.com.my/sitemap.xml
+Sitemap: https://finconnect.com.my/sitemap.xml
