@@ -18,6 +18,39 @@
   margin: 0 auto;
 } */
 
+
+.faq-floating-1 {
+    max-width: 260px !important;
+    position: absolute;
+    top: 5px;
+    right: -67%;
+}
+
+
+
+.faq-floating-2 {
+    max-width: 260px !important;
+    position: absolute;
+    top: -150px;
+    right: 40%;
+}
+
+/* @media (min-width: 1600px) {
+    .faq-floating-1 {
+        max-width: 260px !important;
+        position: absolute;
+        top: 31px;
+        right: -1220%;
+    }
+
+    .faq-floating-2 {
+        max-width: 260px !important;
+        position: absolute;
+        top: -354px;
+        right: 76%;
+    }
+} */
+
 .logo-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

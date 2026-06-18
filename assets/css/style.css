@@ -926,8 +926,8 @@ ol[type="1"] > li:not(:last-child) {
   float: left;
   font-size: 12px;
   margin: 5px 10px 0 0;
-  color: #F7FF62;
-  text-shadow: 2px 2px 0 #1F1D0D;
+  /* color: #F7FF62;
+  text-shadow: 2px 2px 0 #1F1D0D; */
 }
 .info_list i[class*=check] {
   font-size: 14px;
@@ -2358,6 +2358,11 @@ background-position: bottom;
 }
 
 /* article */
+
+.m-none{
+  margin: none!important;
+  font-size: 16px!important;
+}
 
 .article-privasi p, .article-privasi li{
   text-align: justify; /* Justify text in paragraphs */
@@ -6630,7 +6635,7 @@ Responsive For Mobile & Tablet Devices
   justify-content: center;
   padding: 10px 15px;
   border-radius: 5px;
-  color: white;
+  color: white !important;
   font-size: 14px;
   text-decoration: none;
   font-weight: bold;
