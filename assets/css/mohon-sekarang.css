@@ -132,11 +132,18 @@
     color: #909090;
 }
 
+.mohon-submit-note {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
 .button-row {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .btn-mohon {
@@ -274,8 +281,14 @@ div#termsOfUseModal {
         font-size: 11px;
     }
 
+    .mohon-submit-note {
+        font-size: 11px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
     .button-row {
-        margin-top: 30px;
+        margin-top: 10px;
     }
 }
 

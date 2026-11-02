@@ -607,6 +607,35 @@ form#wizard input#loanTermsCondition {
   font-size: 21px;
 }
 
+.banner-mohon-em {
+  display: block;
+  margin-bottom: 33px;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1600px) {
+  .banner-mohon-em {
+    display: block;
+    margin-bottom: 32px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banner-mohon-em {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .banner-mohon-em {
+    font-size: 12px;
+  }
+}
+
 .service_item_loanfit {
   border-radius: 1px;
   position: relative;

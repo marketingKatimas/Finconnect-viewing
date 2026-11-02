@@ -2425,6 +2425,15 @@ background-position: bottom;
 }
 
 /* custom text style */
+.banner-mohon-em {
+  display: block;
+  margin-bottom: 33px;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5;
+}
+
 .italic-skinny {
   font-style: italic;   /* Makes the text italic */
   font-weight: 400;     /* Sets the font weight to be light (skinny) */

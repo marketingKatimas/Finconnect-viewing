@@ -7,6 +7,14 @@
     position: relative;
 }
 
+.banner-mohon-em {
+    display: block;
+    margin-bottom: 33px;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+}
+
 .mt-n30px {
     margin-top: -30px;
 }
